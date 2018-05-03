@@ -46,16 +46,16 @@ class Main extends PluginBase implements Listener{
 							}
 							return true;
 						}else{
-							$sender->sendMessage("§cThat player isn't online!");
+							$sender->sendMessage("§bThat player isn't online!");
 							return true;
 						}
 					}else{
-						$sender->sendMessage("§cYou need to specify a player!");
+						$sender->sendMessage("§bYou need to specify a player!");
 						return false;
 					}
 				}
 			}else{
-				$sender->sendMessage("§cYour not aloud to do that on SourServers");
+				$sender->sendMessage("§bYour not aloud to do that on SourServers");
 				return true;
 			}
 		}
@@ -78,10 +78,10 @@ class Main extends PluginBase implements Listener{
 						$random = explode(":",$rand[mt_rand(0, count($rand) - 1)]);
 						$player->getInventory()->addItem(Item::get($random[0], $random[1], $random[2]));
 					}
-					$player->sendMessage($prefix . "You opened the SourCrate and got rewards!");
+					$player->sendMessage($prefix . "§bYou opened the SourCrate and got rewards!");
 				}else{
 					$event->setCancelled();
-					$player->sendMessage($prefix . "You need to be holding a CrateKey to get CrateChest rewards!");
+					$player->sendMessage($prefix . "§bYou need to be holding a CrateKey to get CrateChest rewards!");
 				}
 			}
 		}
