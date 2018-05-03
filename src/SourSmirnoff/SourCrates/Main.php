@@ -26,7 +26,7 @@ class Main extends PluginBase implements Listener{
 		if(strtolower($command->getName()) == "cratekey"){
 			if($sender->hasPermission("cratekey") || $sender->hasPermission("cratekey.give")){
 				if($this->getConfig()->get("PlayerGive") == false && $sender instanceof Player){
-					$sender->sendMessage("§cYour not aloud to do that on SourServers");
+					$sender->sendMessage("§cYour Not Aloud To Do That On Our Servers");
 					return true;
 				}else{
 					if(isset($args[0])){
@@ -46,16 +46,16 @@ class Main extends PluginBase implements Listener{
 							}
 							return true;
 						}else{
-							$sender->sendMessage("§bThat player isn't online!");
+							$sender->sendMessage("§bThat Player Isn't Online!!!");
 							return true;
 						}
 					}else{
-						$sender->sendMessage("§bYou need to specify a player!");
+						$sender->sendMessage("§bYou Need To Specify A Player!!!");
 						return false;
 					}
 				}
 			}else{
-				$sender->sendMessage("§bYour not aloud to do that on SourServers");
+				$sender->sendMessage("§bYour Not Aloud To Do That On Our Servers!!");
 				return true;
 			}
 		}
@@ -78,10 +78,10 @@ class Main extends PluginBase implements Listener{
 						$random = explode(":",$rand[mt_rand(0, count($rand) - 1)]);
 						$player->getInventory()->addItem(Item::get($random[0], $random[1], $random[2]));
 					}
-					$player->sendMessage($prefix . "§bYou opened the SourCrate and got rewards!");
+					$player->sendMessage($prefix . "§bYou Opened The SourCrate And Got rewards!!!");
 				}else{
 					$event->setCancelled();
-					$player->sendMessage($prefix . "§bYou need to be holding a CrateKey to get CrateChest rewards!");
+					$player->sendMessage($prefix . "§bYou Need To Be Holding A CrateKey To Get CrateChest Rewards!!!");
 				}
 			}
 		}
