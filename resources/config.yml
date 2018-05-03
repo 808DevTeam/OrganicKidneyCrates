@@ -8,16 +8,16 @@ PlayerGive: true
 Prefix: "§7[§a§lSour§2Crate§r§7] §a"
 
 # Location of SourCrate?
-X: 20
-"Y": 69
-Z: 10
+X: 0
+"Y": 0
+Z: 0
 World: world
 
 # ID of the Crate Key (399 = Nether Star)
 KeyID: 399
 
 # How many items a player gets per SourCrate Opening?
-Number: 7
+Number: 8
 
 # List of items in the SourCrate. Random rewards will be chosen.
 Items:
@@ -53,4 +53,4 @@ Items:
 # Use {PLAYER} for the player, and {NAME} for the player's name
 # Not Quite Working yet!!!
 Commands:
-    - say {player] just got a crate key!
+    - say {player] just got a crate key!!!
