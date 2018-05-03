@@ -5,4 +5,4 @@ The command /cratekey {playername} has not been completely working, i suggest us
 I did not start this from scratch, i have compiled a lot of non-working crate plugins to create this masterpiece (lol).
 - SourSmirnoff 
  -(Test Server: sourprison.ddns.net:19132)
- -(Faction Server: fakeplexpe.com:19132)
+ -(Faction Server: vortexpe.tk:19132)
